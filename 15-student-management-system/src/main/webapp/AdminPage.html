@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: grey;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 7px;
+            font-size: 24px;
+            font-style: inherit;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+        }
+
+        .management-box {
+            max-width: 400px;
+           background-color:#9FB1BCFF;
+            
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 108px;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-bottom: 40px;
+            padding-top: 40px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .management-button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            width: 100%;
+            background-color: #4caf50;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        .logout-button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            width: 100%;
+            background-color: #f44336;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        .management-button:hover,
+        .logout-button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+<body>
+   <form action="Adminpage" method="post">
+   <header>
+        <h1>Student Management System</h1>
+    </header>
+    <main >
+        <div class="management-box">
+            <div class="button-container">
+                <button class="management-button" type="submit" name="adminPage" value="DisplayAllStudents">Fetch Data</button>
+                <button class="management-button" type="submit" name="adminPage" value="AddNewStudent">Add New Student</button>
+                <button class="management-button" type="submit" name="adminPage" value="UpdateStudentData">Update Student Data</button>
+                <button class="management-button" type="submit" name="adminPage" value="RemoveStudent">Remove Student</button>
+                <button class="logout-button" type="submit" name="adminPage" value="Logout">Logout</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Student Management System
+    </footer>
+   </form>
+</body>
+</html>

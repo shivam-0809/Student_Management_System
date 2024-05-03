@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: grey;
+            text-align: center;
+            margin: 50px;
+        }
+        .login-box {
+            max-width: 300px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .login-button.student {
+            background-color: blueviolet;
+            color: #fff;
+        }
+        .login-button.administrator {
+            background-color: #2196f3;
+            color: #fff;
+        }
+        .login-button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 18px;
+            text-align: center;
+            position: fixed;
+            bottom: 2px;
+            width: 100%;
+            margin-left: -51px;
+        }
+    </style>
+<body>
+<form action="LandingPage" method="post">
+ <div class="login-box" >
+        <button class="login-button student" name="landingPage" value="LoginAsStudent">Login as Student</button>
+        <button class="login-button administrator" name="landingPage" value="AdministratorPage">Administrator Page</button>
+    </div>
+     <footer>
+        &copy; 2024 Welcome to Student Management System
+    </footer>
+ </form>
+</body>
+</html>

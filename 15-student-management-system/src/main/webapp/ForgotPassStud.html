@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #9FB1BCFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+</style>
+<body>
+
+
+    <div class="container">
+        <h2>Update Password</h2>
+
+        <form action="UpdatePassStud" method="post">
+            <label for="oldPassword">Password:</label>
+            <input type="password" id="oldPassword" name="oldPassword" required>
+
+            <label for="newPassword">Re-Enter Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+</body>
+</html>

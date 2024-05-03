@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: grey;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #9FB1BCFF;
+            color: #fff;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        #formContainer {
+            margin: 20px;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        #studentIdInput {
+            padding: 8px;
+            margin-right: 10px;
+        }
+
+        #fetchButton {
+            padding: 8px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        #resultContainer {
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+<body>
+<header>
+        Student Information Fetcher
+    </header>
+
+    <form action="StudDatafetch" method="post">
+        <div id="formContainer">
+            <label for="studentIdInput">Enter Your Id:</label>
+            <input type="text" name="StudDatafetch" id="studentIdInput" placeholder="Student ID">
+            <button id="fetchButton">Fetch Data</button>
+        </div>
+    
+    </form>
+</body>
+</html>

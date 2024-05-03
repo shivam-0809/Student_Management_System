@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: grey;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color:#9FB1BCFF;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        .form-container button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+<body>
+<div class="form-container">
+        <h2>Student Information Form</h2>
+        <form action="AddStud" method="post" id="studentInfoForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="contactNo">Contact No:</label>
+            <input type="number" id="contactNo" name="contactNo" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label for="branch">Branch:</label>
+            <input type="text" id="branch" name="branch" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
